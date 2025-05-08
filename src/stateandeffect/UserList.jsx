@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Frm from './Frm';
 import UserCreate from './UserCreate';
+import './design.css';
+import bk from './images/bk.jpeg' ;
 function UserList(props) {
     let [data, setData] = useState([]);
     let [id, setId] = useState(1);
@@ -31,13 +33,14 @@ function UserList(props) {
    }
     return (
         <div>
+            <img src={bk} height="100px" />
             {
                 (whattoshow == '' || whattoshow == 'deleted') ? "" : (whattoshow == 'create') ? <UserCreate prox={changeshow}></UserCreate> : <Frm id={id} prox={changeshow}></Frm>
             }
             <a href='#' onClick={() => {
                 changeshow('create');
             }}>Create</a>
-            <table border="1px">
+            <table  className='list'>
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -55,14 +58,14 @@ function UserList(props) {
                                 <td>{info.name}</td>
                                 <td>{info.price}</td>
                                 <td>
-                                    <button onClick={() => {
+                                    <button className='axixa-button button-success' onClick={() => {
                                         changeshow('edit');
                                         setId(info.id);
 
                                     }}>Edit</button>
                                 </td>
                                 <td>
-                                    <button onClick={() => {
+                                    <button className='axixa-button button-danger' onClick={() => {
                                         deleterecord(info.id);
                                        
 

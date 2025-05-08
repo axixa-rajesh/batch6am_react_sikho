@@ -1,0 +1,45 @@
+.list{
+    width: 80%;
+    margin: 10px auto;
+    box-shadow: 1px 2px 5px black;
+    border-radius: 15px;
+    border-collapse: collapse;
+    overflow: hidden;
+   
+}
+.list thead{
+    background-color: black;
+    color: white;
+}
+.list td,.list th{
+    padding: 5px;
+    border:1px solid #aaa;
+}
+.list thead tr th:first-child {
+    border-radius: 15px 0 0 0 ;
+
+}
+.list thead tr th:last-child{
+    border-radius: 0 15px 0 0 ;
+
+}
+.axixa-button{
+
+    border-radius: 5px;
+    min-height: 25px;
+    padding: 5px 10px;
+    min-width: 60px;
+    border:none;
+    outline: none;
+    font-size: 0.8em;
+}
+.button-success{
+    background-color: rgb(36, 173, 36);
+    color:white;
+
+}
+.button-danger{
+    background-color: rgb(173, 36, 36);
+    color:white;
+
+}

@@ -1,0 +1,17 @@
+#header{
+    border-bottom: 1px solid #aaa;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    
+
+}
+#header>.col-1{
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid #ddf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
