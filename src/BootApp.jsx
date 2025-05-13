@@ -7,6 +7,7 @@ import './bootapp.css';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Index from './components/products/Index';
+
 function BootApp(props) {
     return (
         <>
@@ -18,7 +19,7 @@ function BootApp(props) {
                         <Routes>
                                 <Route path='/' element={<Home></Home>} ></Route>
                                 <Route path='/about' element={<About></About>} ></Route>
-                                <Route path='/products' element={<Index></Index>} ></Route>
+                                <Route path='/products/:item?' element={<Index></Index>} ></Route>
 
                         </Routes>
                  
